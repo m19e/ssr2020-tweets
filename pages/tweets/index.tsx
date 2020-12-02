@@ -1,6 +1,5 @@
 import { GetStaticProps } from "next";
 import Link from "next/link";
-import * as React from "react";
 
 import { Tweet } from "../../interfaces";
 import { TweetData } from "../../utils/tweets";
