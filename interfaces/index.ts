@@ -10,5 +10,7 @@ export type User = {
 };
 
 export type Tweet = {
-    id: number;
+    id: string;
+    url: string;
+    name: string;
 };
