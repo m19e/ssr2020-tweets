@@ -1,5 +1,6 @@
 import { GetStaticProps } from "next";
 import Link from "next/link";
+import { TwitterTweetEmbed } from "react-twitter-embed";
 
 import { Tweet } from "../../interfaces";
 import { TweetData } from "../../utils/tweets";
@@ -12,15 +13,9 @@ type Props = {
 const WithStaticProps = ({ items }: Props) => (
     <Layout title="Tweets | Next.js + TypeScript Example">
         <h1>Tweets</h1>
-        <ul>
-            {items.map((item: Tweet) => (
-                <li key={item.id}>
-                    <a href={item.url} target="_blank">
-                        {item.name}
-                    </a>
-                </li>
-            ))}
-        </ul>
+        {items.map((item: Tweet) => (
+            <TwitterTweetEmbed tweetId={item.id} options={{ cards: "hidden", width: 300, maxWidth: 800, display: "flex" }} placeholder={"Loading..."} />
+        ))}
         <p>
             <Link href="/">
                 <a>Go home</a>
