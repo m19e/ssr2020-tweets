@@ -33,7 +33,9 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
                 </Link>{" "}
             </nav>
         </header>
-        {children}
+        <div style={{ width: "100%" }}>
+            <div style={{ flex: 1 }}>{children}</div>
+        </div>
         <footer>
             <hr />
             <span>I'm here to stay (Footer)</span>
