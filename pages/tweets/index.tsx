@@ -25,7 +25,7 @@ const WithStaticProps = ({ items }: Props) => (
                 </IconButton>
             </div>
         </div>
-        <Divider dense elevated style={{ marginTop: "8px" }} />
+        <Divider dense elevated style={{ margin: "8px 0" }} />
         <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
             <TweetList tweets={items} />
         </div>
