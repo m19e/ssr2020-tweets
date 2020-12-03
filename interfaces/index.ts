@@ -11,7 +11,6 @@ export type User = {
 
 export type Tweet = {
     id: string;
-    url: string;
     name: string;
     idol: Idol;
 };
