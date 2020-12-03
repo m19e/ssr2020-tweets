@@ -12,8 +12,15 @@ type Props = {
 };
 
 const WithStaticProps = ({ items }: Props) => (
-    <Layout title="Tweets | Next.js + TypeScript Example">
-        {/* <h1 style={{ fontSize: "60px", padding: "0 8px" }}>Tweets</h1> */}
+    <Layout title="SSR2020 Tweets">
+        <div style={{ display: "flex" }}>
+            <div style={{ display: "flex", flexGrow: 1 }}>
+                <h1 style={{ fontSize: "60px", padding: "0 8px", color: "#8dbbff" }}>SSR2020 Tweets</h1>
+            </div>
+            <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+                <p style={{ width: "30px", height: "30px" }}>icon</p>
+            </div>
+        </div>
         <Divider dense elevated style={{ marginTop: "8px" }} />
         <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
             <TweetList tweets={items} />
