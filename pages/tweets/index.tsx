@@ -1,7 +1,7 @@
 import { GetStaticProps } from "next";
-import Link from "next/link";
 import { TwitterTweetEmbed } from "react-twitter-embed";
-import { Card, Divider } from "ui-neumorphism";
+import { Card, Divider, ProgressCircular } from "ui-neumorphism";
+import "ui-neumorphism/dist/index.css";
 
 import { Tweet } from "../../interfaces";
 import { TweetData } from "../../utils/tweets";
@@ -22,12 +22,27 @@ const WithStaticProps = ({ items }: Props) => (
                         <TwitterTweetEmbed
                             tweetId={item.id}
                             options={{ width: 300, maxWidth: 800 }}
-                            placeholder={<Card style={{ backgroundColor: item.idol.unit.color, borderRadius: "5%", width: "100px", height: "100px" }}></Card>}
+                            placeholder={
+                                <Card
+                                    style={{
+                                        backgroundColor: item.idol.color,
+                                        borderRadius: "5%",
+                                        width: "100px",
+                                        height: "100px",
+                                        display: "flex",
+                                        justifyContent: "center",
+                                        alignItems: "center",
+                                    }}
+                                >
+                                    <ProgressCircular indeterminate color={item.idol.unit.color} />
+                                </Card>
+                            }
                         />
                     </div>
                 </div>
             ))}
         </div>
+        {/* <ProgressCircular indeterminate color="#7967c3" /> */}
         {/* <p>
             <Link href="/">
                 <a>Go home</a>
