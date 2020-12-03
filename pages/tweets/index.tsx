@@ -1,6 +1,8 @@
 import { GetStaticProps } from "next";
-import { Divider } from "ui-neumorphism";
+import { Divider, IconButton } from "ui-neumorphism";
 import "ui-neumorphism/dist/index.css";
+import Icon from "@mdi/react";
+import { mdiTwitter } from "@mdi/js";
 
 import { Tweet } from "../../interfaces";
 import { TweetData } from "../../utils/tweets";
@@ -18,7 +20,9 @@ const WithStaticProps = ({ items }: Props) => (
                 <h1 style={{ fontSize: "60px", padding: "0 8px", color: "#8dbbff" }}>SSR2020 Tweets</h1>
             </div>
             <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                <p style={{ width: "30px", height: "30px" }}>icon</p>
+                <IconButton rounded text={false} size={"large"}>
+                    <Icon path={mdiTwitter} size={1.2} color="#1da1f2" />
+                </IconButton>
             </div>
         </div>
         <Divider dense elevated style={{ marginTop: "8px" }} />
