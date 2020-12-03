@@ -13,9 +13,13 @@ type Props = {
 const WithStaticProps = ({ items }: Props) => (
     <Layout title="Tweets | Next.js + TypeScript Example">
         <h1>Tweets</h1>
-        {items.map((item: Tweet) => (
-            <TwitterTweetEmbed tweetId={item.id} options={{ cards: "hidden", width: 300, maxWidth: 800, display: "flex" }} placeholder={"Loading..."} />
-        ))}
+        <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-around" }}>
+            {items.map((item: Tweet) => (
+                <div style={{ padding: "0 8px" }}>
+                    <TwitterTweetEmbed tweetId={item.id} options={{ cards: "hidden", width: 300, maxWidth: 800 }} placeholder={"Loading..."} />
+                </div>
+            ))}
+        </div>
         <p>
             <Link href="/">
                 <a>Go home</a>
