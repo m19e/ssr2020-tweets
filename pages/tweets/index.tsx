@@ -6,6 +6,7 @@ import "ui-neumorphism/dist/index.css";
 import { Tweet } from "../../interfaces";
 import { TweetData } from "../../utils/tweets";
 import Layout from "../../components/Layout";
+import TweetList from "../../components/TweetList";
 
 type Props = {
     items: Tweet[];
@@ -14,33 +15,9 @@ type Props = {
 const WithStaticProps = ({ items }: Props) => (
     <Layout title="Tweets | Next.js + TypeScript Example">
         {/* <h1 style={{ fontSize: "60px", padding: "0 8px" }}>Tweets</h1> */}
-        <Divider dense elevated style={{ margin: "8px 0" }} />
-        <div style={{ display: "flex", flexWrap: "wrap" }}>
-            {items.map((item: Tweet) => (
-                <div style={{ padding: "0 8px" }}>
-                    <div style={{ width: "250px", height: "500px", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                        <TwitterTweetEmbed
-                            tweetId={item.id}
-                            options={{ width: 300, maxWidth: 800 }}
-                            placeholder={
-                                <Card
-                                    style={{
-                                        backgroundColor: item.idol.color,
-                                        borderRadius: "5%",
-                                        width: "100px",
-                                        height: "100px",
-                                        display: "flex",
-                                        justifyContent: "center",
-                                        alignItems: "center",
-                                    }}
-                                >
-                                    <ProgressCircular indeterminate color={item.idol.unit.color} />
-                                </Card>
-                            }
-                        />
-                    </div>
-                </div>
-            ))}
+        <Divider dense elevated style={{ marginTop: "8px" }} />
+        <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
+            <TweetList tweets={items} />
         </div>
         {/* <ProgressCircular indeterminate color="#7967c3" /> */}
         {/* <p>
