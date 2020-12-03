@@ -13,4 +13,16 @@ export type Tweet = {
     id: string;
     url: string;
     name: string;
+    idol: Idol;
+};
+
+export type Idol = {
+    name: string;
+    color: string;
+    unit: Unit;
+};
+
+export type Unit = {
+    name: string;
+    color: string;
 };
