@@ -20,7 +20,7 @@ const WithStaticProps = ({ items }: Props) => (
                 <h1 style={{ fontSize: "60px", padding: "0 8px", color: "#8dbbff" }}>SSR2020 Tweets</h1>
             </div>
             <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                <IconButton rounded text={false} size={"large"}>
+                <IconButton rounded text={false} size={"large"} style={{ margin: "8px" }}>
                     <Icon path={mdiTwitter} size={1.2} color="#1da1f2" />
                 </IconButton>
             </div>
