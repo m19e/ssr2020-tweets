@@ -1,6 +1,5 @@
 import { GetStaticProps } from "next";
-import { TwitterTweetEmbed } from "react-twitter-embed";
-import { Card, Divider, ProgressCircular } from "ui-neumorphism";
+import { Divider } from "ui-neumorphism";
 import "ui-neumorphism/dist/index.css";
 
 import { Tweet } from "../../interfaces";
