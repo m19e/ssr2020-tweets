@@ -20,7 +20,7 @@ const UnitTweets = ({ unit, tweets }: Props) => (
             <div style={{ display: "flex" }}>
                 <Link href="/">
                     <a style={{ textDecoration: "none" }}>
-                        <h1 style={{ fontSize: "60px", padding: "0 8px", color: "#8dbbff" }}>SSR2020 Tweets</h1>
+                        <h1 style={{ fontSize: "64px", padding: "0 8px", color: "#8dbbff" }}>SSR2020 Tweets</h1>
                     </a>
                 </Link>
             </div>
