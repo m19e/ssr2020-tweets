@@ -20,7 +20,7 @@ const TweetView = ({ tweet }: Props) => {
         <div key={tweet.id} style={{ padding: "0 8px" }}>
             <TwitterTweetEmbed
                 tweetId={tweet.id}
-                options={{ card: "hidden", width: 300, maxWidth: 800 }}
+                options={{ width: 300, maxWidth: 800 }}
                 placeholder={
                     // <div style={{ width: "250px", height: "500px", margin: "8px", display: "flex", justifyContent: "center", alignItems: "center" }}>
                     <Card
