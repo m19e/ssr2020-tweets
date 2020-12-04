@@ -33,4 +33,4 @@ yarn-error.log*
 # vercel
 .vercel
 
-page/tweets/index.tsx
+pages/tweets/index.tsx
