@@ -33,9 +33,8 @@ const IndexPage = () => (
                                     style={{
                                         fontSize: "48px",
                                         margin: "0 8px",
-                                        fontWeight: info.name == "hokagoclimaxgirls" ? "normal" : "lighter",
+                                        fontWeight: "lighter",
                                         color: info.color,
-                                        fontFamily: info.name == "hokagoclimaxgirls" ? "游ゴシック体, Yu Gothic, YuGothic, sans-serif" : "",
                                     }}
                                 >
                                     {info.fullname}
