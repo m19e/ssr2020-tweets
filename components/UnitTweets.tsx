@@ -8,6 +8,7 @@ import { mdiTwitter } from "@mdi/js";
 import { Tweet, UnitInfo } from "../interfaces";
 import Layout from "../components/Layout";
 import TweetList from "../components/TweetList";
+import TweetView from "./Tweet";
 
 type Props = {
     unit: UnitInfo;
@@ -34,7 +35,10 @@ const UnitTweets = ({ unit, tweets }: Props) => (
         </div>
         <Divider dense elevated style={{ margin: "8px 0" }} />
         <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
-            <TweetList tweets={tweets} />
+            {/* <TweetList tweets={tweets} /> */}
+            {tweets.map((t) => (
+                <TweetView tweet={t} />
+            ))}
         </div>
     </Layout>
 );
