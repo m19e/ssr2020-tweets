@@ -1,13 +1,12 @@
 import Link from "next/link";
 import Layout from "../components/Layout";
 
-import { Alert, Divider, IconButton } from "ui-neumorphism";
+import { Divider, IconButton } from "ui-neumorphism";
 import "ui-neumorphism/dist/index.css";
 import Icon from "@mdi/react";
 import { mdiTwitter } from "@mdi/js";
 
 import { UnitInfoList } from "../utils/units";
-import { info } from "console";
 
 const IndexPage = () => (
     <Layout title="SSR2020 Tweets">
