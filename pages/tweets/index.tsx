@@ -29,7 +29,6 @@ const WithStaticProps = ({ items }: Props) => (
         <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
             <TweetList tweets={items} />
         </div>
-        {/* <ProgressCircular indeterminate color="#7967c3" /> */}
         {/* <p>
             <Link href="/">
                 <a>Go home</a>
