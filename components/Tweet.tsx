@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
 import { TwitterTweetEmbed } from "react-twitter-embed";
-import { Card, ProgressCircular, overrideThemeVariables } from "ui-neumorphism";
+import { Card, ProgressCircular } from "ui-neumorphism";
 import "ui-neumorphism/dist/index.css";
 
 import { Tweet } from "../interfaces";
+import OverrideTextColor from "../libs/override";
 
 type Props = {
     tweet: Tweet;
@@ -11,9 +12,7 @@ type Props = {
 
 const TweetView = ({ tweet }: Props) => {
     useEffect(() => {
-        overrideThemeVariables({
-            "--g-text-color-secondary-light": tweet.idol.unit.color,
-        });
+        OverrideTextColor(tweet.idol.unit.color);
     }, []);
 
     return (
