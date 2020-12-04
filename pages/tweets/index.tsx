@@ -10,10 +10,10 @@ import Layout from "../../components/Layout";
 import TweetList from "../../components/TweetList";
 
 type Props = {
-    items: Tweet[];
+    tweets: Tweet[];
 };
 
-const WithStaticProps = ({ items }: Props) => (
+const WithStaticProps = ({ tweets }: Props) => (
     <Layout title="SSR2020 Tweets">
         <div style={{ display: "flex" }}>
             <div style={{ display: "flex", flexGrow: 1 }}>
@@ -27,7 +27,7 @@ const WithStaticProps = ({ items }: Props) => (
         </div>
         <Divider dense elevated style={{ margin: "8px 0" }} />
         <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
-            <TweetList tweets={items} />
+            <TweetList tweets={tweets} />
         </div>
         {/* <p>
             <Link href="/">
