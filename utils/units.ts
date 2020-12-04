@@ -10,10 +10,10 @@ export const UnitData: { [name: string]: Unit } = {
 };
 
 export const UnitInfoList: UnitInfo[] = [
-    { name: "illuminationstars", fullname: "illumination STARS", title: "イルミネ" },
-    { name: "lantica", fullname: "L'Antica", title: "アンティーカ" },
-    { name: "hokagoclimaxgirls", fullname: "放課後クライマックスガールズ", title: "放クラ" },
-    { name: "alstroemeria", fullname: "ALSTROEMERIA", title: "アルスト" },
-    { name: "straylight", fullname: "Straylight", title: "ストレイ" },
-    { name: "noctchill", fullname: "noctchill", title: "ノクチル" },
+    { name: "illuminationstars", fullname: "illumination STARS", title: "イルミネ", color: "#ffa700" },
+    { name: "lantica", fullname: "L'Antica", title: "アンティーカ", color: "#853998" },
+    { name: "hokagoclimaxgirls", fullname: "放課後クライマックスガールズ", title: "放クラ", color: "#fa8333" },
+    { name: "alstroemeria", fullname: "ALSTROEMERIA", title: "アルスト", color: "#e43b80" },
+    { name: "straylight", fullname: "Straylight", title: "ストレイ", color: "#e71212" },
+    { name: "noctchill", fullname: "noctchill", title: "ノクチル", color: "#a9bbfd" },
 ];
