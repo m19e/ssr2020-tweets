@@ -7,7 +7,6 @@ import { mdiTwitter } from "@mdi/js";
 
 import { Tweet, UnitInfo } from "../interfaces";
 import Layout from "../components/Layout";
-import TweetList from "../components/TweetList";
 import TweetView from "./Tweet";
 
 type Props = {
