@@ -22,6 +22,8 @@ export type Idol = {
 };
 
 export type Unit = {
-    name: string;
+    name: UnitType;
     color: string;
 };
+
+export type UnitType = "illuminationstars" | "lantica" | "hokagoclimaxgirls" | "alstroemeria" | "straylight" | "noctchill";
