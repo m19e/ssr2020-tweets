@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { Divider, IconButton } from "ui-neumorphism";
 import "ui-neumorphism/dist/index.css";
 import Icon from "@mdi/react";
@@ -14,9 +16,13 @@ type Props = {
 
 const UnitTweets = ({ unit, tweets }: Props) => (
     <Layout title={`${unit.fullname} | SSR2020 Tweets`}>
-        <div style={{ display: "flex" }}>
-            <div style={{ display: "flex", flexGrow: 1 }}>
-                <h1 style={{ fontSize: "60px", padding: "0 8px", color: "#8dbbff" }}>SSR2020 Tweets</h1>
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+            <div style={{ display: "flex" }}>
+                <Link href="/">
+                    <a style={{ textDecoration: "none" }}>
+                        <h1 style={{ fontSize: "60px", padding: "0 8px", color: "#8dbbff" }}>SSR2020 Tweets</h1>
+                    </a>
+                </Link>
             </div>
             <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                 <IconButton rounded text={false} size={"large"} style={{ margin: "8px" }}>
