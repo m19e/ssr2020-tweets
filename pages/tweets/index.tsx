@@ -29,11 +29,6 @@ const WithStaticProps = ({ tweets }: Props) => (
         <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
             <TweetList tweets={tweets} />
         </div>
-        {/* <p>
-            <Link href="/">
-                <a>Go home</a>
-            </Link>
-        </p> */}
     </Layout>
 );
 
