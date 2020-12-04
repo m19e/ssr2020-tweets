@@ -1,12 +1,13 @@
 import { GetStaticProps, GetStaticPaths } from "next";
 
-import { Tweet, Unit } from "../interfaces";
+import { Tweet, UnitInfo } from "../interfaces";
 import { UnitTweetData } from "../utils/tweets";
 import Layout from "../components/Layout";
-import Tweets from "../pages/tweets";
+import UnitTweets from "../components/UnitTweets";
+import { UnitInfoList } from "../utils/units";
 
 type Props = {
-    unit?: Unit;
+    unit: UnitInfo;
     tweets: Tweet[];
     errors?: string;
 };
@@ -22,7 +23,7 @@ const StaticPropsDetail = ({ unit, tweets, errors }: Props) => {
         );
     }
 
-    return <Tweets tweets={tweets} />;
+    return <UnitTweets unit={unit} tweets={tweets} />;
 };
 
 export default StaticPropsDetail;
@@ -43,9 +44,9 @@ export const getStaticPaths: GetStaticPaths = async () => {
 // direct database queries.
 export const getStaticProps: GetStaticProps = async ({ params }) => {
     try {
-        const unit = params?.unit;
-        // const unit = Object.keys(UnitTweetData).find(key => key === u);
-        const tweets = UnitTweetData[`${unit}`] || [];
+        const u = params?.unit;
+        const unit = UnitInfoList.find((d) => d.name === u);
+        const tweets = UnitTweetData[`${u}`] || [];
         // By returning { props: item }, the StaticPropsDetail component
         // will receive `item` as a prop at build time
         return { props: { unit, tweets } };
