@@ -25,9 +25,11 @@ const UnitTweets = ({ unit, tweets }: Props) => (
                 </Link>
             </div>
             <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                <IconButton rounded text={false} size={"large"} style={{ margin: "8px" }}>
-                    <Icon path={mdiTwitter} size={1.2} color="#1da1f2" />
-                </IconButton>
+                <a href={`https://twitter.com/intent/tweet?text=${unit.fullname}+%7C+SSR2020+Tweets&url=www.example.com`} target="_blank">
+                    <IconButton rounded text={false} size={"large"} style={{ margin: "8px" }}>
+                        <Icon path={mdiTwitter} size={1.2} color="#1da1f2" />
+                    </IconButton>
+                </a>
             </div>
         </div>
         <Divider dense elevated style={{ margin: "8px 0" }} />

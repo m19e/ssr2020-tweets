@@ -15,9 +15,11 @@ const IndexPage = () => (
                 <h1 style={{ fontSize: "64px", padding: "0 8px", color: "#8dbbff" }}>SSR2020 Tweets</h1>
             </div>
             <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                <IconButton rounded text={false} size={"large"} style={{ margin: "8px" }}>
-                    <Icon path={mdiTwitter} size={1.2} color="#1da1f2" />
-                </IconButton>
+                <a href={`https://twitter.com/intent/tweet?text=Check+SSR2020+Tweets&url=www.example.com`} target="_blank">
+                    <IconButton rounded text={false} size={"large"} style={{ margin: "8px" }}>
+                        <Icon path={mdiTwitter} size={1.2} color="#1da1f2" />
+                    </IconButton>
+                </a>
             </div>
         </div>
         <Divider dense elevated style={{ margin: "8px 0" }} />
