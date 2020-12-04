@@ -26,7 +26,7 @@ const UnitTweets = ({ unit, tweets }: Props) => (
             </div>
             <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                 <a
-                    href={`https://twitter.com/intent/tweet?text=${unit.fullname}+%7C+SSR2020+Tweets&url=https://ssr2020-tweets.vercel.app/${unit.fullname}`}
+                    href={`https://twitter.com/intent/tweet?text=${unit.fullname}+%7C+SSR2020+Tweets&url=https://ssr2020-tweets.vercel.app/${unit.name}`}
                     target="_blank"
                 >
                     <IconButton rounded text={false} size={"large"} style={{ margin: "8px" }}>
