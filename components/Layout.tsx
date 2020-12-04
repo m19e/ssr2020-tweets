@@ -38,7 +38,7 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
         </header> */}
         <div style={{ width: "100%" }}>
             <div style={{ flex: 1 }}>
-                <Card inset style={{ margin: "16px", padding: "16px", paddingTop: "8px" }}>
+                <Card inset style={{ margin: "32px", padding: "16px", paddingTop: "8px" }}>
                     {children}
                 </Card>
             </div>
