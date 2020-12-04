@@ -11,9 +11,7 @@ import { UnitInfoList } from "../utils/units";
 const IndexPage = () => (
     <Layout title="SSR2020 Tweets">
         <div style={{ display: "flex", justifyContent: "space-between", flexWrap: "wrap" }}>
-            <div style={{ display: "flex" }}>
-                <h1 style={{ fontSize: "64px", padding: "0 8px", color: "#8dbbff" }}>SSR2020 Tweets</h1>
-            </div>
+            <h1 style={{ fontSize: "64px", padding: "0 8px", color: "#8dbbff" }}>SSR2020 Tweets</h1>
             <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                 <a href={`https://twitter.com/intent/tweet?text=Check+SSR2020+Tweets&url=https://ssr2020-tweets.vercel.app/`} target="_blank">
                     <IconButton rounded text={false} size={"large"} style={{ margin: "8px" }}>

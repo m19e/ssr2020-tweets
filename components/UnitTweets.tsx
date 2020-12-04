@@ -17,13 +17,11 @@ type Props = {
 const UnitTweets = ({ unit, tweets }: Props) => (
     <Layout title={`${unit.fullname} | SSR2020 Tweets`}>
         <div style={{ display: "flex", justifyContent: "space-between", flexWrap: "wrap" }}>
-            <div style={{ display: "flex" }}>
-                <Link href="/">
-                    <a style={{ textDecoration: "none" }}>
-                        <h1 style={{ fontSize: "64px", padding: "0 8px", color: "#8dbbff" }}>SSR2020 Tweets</h1>
-                    </a>
-                </Link>
-            </div>
+            <Link href="/">
+                <a style={{ textDecoration: "none" }}>
+                    <h1 style={{ fontSize: "64px", padding: "0 8px", color: "#8dbbff" }}>SSR2020 Tweets</h1>
+                </a>
+            </Link>
             <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                 <a
                     href={`https://twitter.com/intent/tweet?text=${unit.fullname}+%7C+SSR2020+Tweets&url=https://ssr2020-tweets.vercel.app/${unit.name}`}
