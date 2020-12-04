@@ -28,8 +28,7 @@ export type Unit = {
 
 export type UnitType = "illuminationstars" | "lantica" | "hokagoclimaxgirls" | "alstroemeria" | "straylight" | "noctchill";
 
-export type UnitInfo = {
-    name: UnitType;
+export type UnitInfo = Unit & {
     fullname: string;
     title: string;
 };
