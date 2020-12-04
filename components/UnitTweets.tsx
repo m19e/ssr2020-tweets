@@ -16,7 +16,7 @@ type Props = {
 
 const UnitTweets = ({ unit, tweets }: Props) => (
     <Layout title={`${unit.fullname} | SSR2020 Tweets`}>
-        <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <div style={{ display: "flex", justifyContent: "space-between", flexWrap: "wrap" }}>
             <div style={{ display: "flex" }}>
                 <Link href="/">
                     <a style={{ textDecoration: "none" }}>

@@ -10,8 +10,8 @@ import { UnitInfoList } from "../utils/units";
 
 const IndexPage = () => (
     <Layout title="SSR2020 Tweets">
-        <div style={{ display: "flex" }}>
-            <div style={{ display: "flex", flexGrow: 1 }}>
+        <div style={{ display: "flex", justifyContent: "space-between", flexWrap: "wrap" }}>
+            <div style={{ display: "flex" }}>
                 <h1 style={{ fontSize: "64px", padding: "0 8px", color: "#8dbbff" }}>SSR2020 Tweets</h1>
             </div>
             <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
