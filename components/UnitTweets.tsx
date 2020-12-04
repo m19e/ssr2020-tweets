@@ -37,7 +37,6 @@ const UnitTweets = ({ unit, tweets }: Props) => (
         </div>
         <Divider dense elevated style={{ margin: "8px 0" }} />
         <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
-            {/* <TweetList tweets={tweets} /> */}
             {tweets.map((t) => (
                 <TweetView tweet={t} />
             ))}
