@@ -12,7 +12,7 @@ export default ({
     title,
     description = "SSR2020 Tweets | List up SSR tweets",
     keyword = "",
-    image = "",
+    image = "https://raw.githubusercontent.com/m19e/ssr2020-tweets/main/public/ssr2020tweets.png",
     url = "https://ssr2020-tweets.vercel.app/",
 }: Props) => (
     <Head>
@@ -25,7 +25,8 @@ export default ({
         <meta property="og:image" content={image} />
         <meta property="og:url" content={url} />
         <meta property="og:site_name" content={title} />
-        <meta name="twitter:card" content="summary_large_image" />
+        {/* <meta name="twitter:card" content="summary_large_image" /> */}
+        <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={image} />
