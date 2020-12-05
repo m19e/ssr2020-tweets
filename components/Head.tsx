@@ -12,7 +12,7 @@ export default ({
     title,
     description = "SSR2020 Tweets | List up SSR tweets",
     keyword = "",
-    image = "/ssr2020tweets.png",
+    image = "",
     url = "https://ssr2020-tweets.vercel.app/",
 }: Props) => (
     <Head>
