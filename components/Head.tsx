@@ -2,10 +2,10 @@ import Head from "next/head";
 
 type Props = {
     title: string;
-    description: string;
-    keyword: string;
-    image: string;
-    url: string;
+    description?: string;
+    keyword?: string;
+    image?: string;
+    url?: string;
 };
 
 export default ({
