@@ -8,3 +8,6 @@
 
 * [ui-neumorphism](https://github.com/AKAspanion/ui-neumorphism) - React component library for "neumorphism"
 
+## License
+
+[MIT](https://github.com/m19e/ssr2020-tweets/blob/main/LICENSE)
